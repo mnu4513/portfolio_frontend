@@ -21,7 +21,7 @@ const Contact = () => {
     // Add your logic for handling form submission, such as sending an email or saving to a database
     console.log('Form submitted:', formData);
 
-    const response = await fetch('http://localhost:3001/query', {
+    const response = await fetch('https://glittery-dusty-balaur.glitch.me/query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
