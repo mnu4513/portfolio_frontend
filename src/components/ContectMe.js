@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import './ContectMe.css'
+import './ContectMe.css';
+import { backendUrl } from './Config';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const Contact = () => {
     // Add your logic for handling form submission, such as sending an email or saving to a database
     console.log('Form submitted:', formData);
 
-    const response = await fetch('https://glittery-dusty-balaur.glitch.me/query', {
+    const response = await fetch(backendUrl + 'query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
